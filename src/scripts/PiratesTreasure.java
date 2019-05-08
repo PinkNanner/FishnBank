@@ -127,71 +127,71 @@ public class PiratesTreasure extends PollingScript<ClientContext> {
     }
     public void retrieveRum() {
         System.out.println("Starting retrieve rum segment");
-//        resetCamera();
-//        travelTo(3014, 3219, 500);
-//        travelTo(3016, 3228, 500, 1535);
-//        GroundItem shelves = ctx.groundItems.select().id(7957).nearest().poll();
-//        Condition.wait(new Callable<Boolean>() {
-//            @Override
-//            public Boolean call() throws Exception { //CANNOT Take another white apron if already carrying or wearing one
-//                shelves.interact("Take");
-//                Condition.sleep(1900);
-//                return ctx.inventory.select().id(1005).count() > 0;
-//            }
-//        }, 500, 100);
-//        equipItem(1005, "Wear");
-//        travelTo(3014, 3220, 500);
-//        travelTo(3014, 3217, 500, 1535);
-//        travelTo(3015, 3205, 500);
-//        newNpc(1026);
-//        continueChat(1);
-//        continueChat("Can I get a job here?");
-//        continueChat(4);
-//        travelTo(3012, 3204, 100);
-////        travelTo(3010, 3207, 100, 2069); //TODO: Check X for in-front of door or not
-//        newDoor(2069, 3011, 3204);
-//        Condition.wait(new Callable<Boolean>() {
-//            @Override
-//            public Boolean call() throws Exception {
-//                GameObject rumCrate = ctx.objects.select().id(2071).nearest().poll();
-//                rumCrate.interact("Search");
-//                return ctx.inventory.select().id(431).count() > 0;
-//            }
-//        }, 500, 100);
-//
-//        Condition.sleep(500);
-//        travelTo(3011, 3204, 100);
-//        newDoor(2069, 3012, 3204);
-//        travelTo(pathToPirateFromShop);
-//        newNpc(3643);
-//        continueChat(6);
-//        clearChatMenus();
-//        clearChatMenus();
-//        continueChat(2);
-//        clearChatMenus();
-//        continueChat("Ok thanks, I'll go and get it.");
-//        continueChat(2);
+        resetCamera();
+        travelTo(3014, 3219, 500);
+        travelTo(3016, 3228, 500, 1535);
+        GroundItem shelves = ctx.groundItems.select().id(7957).nearest().poll();
+        Condition.wait(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception { //CANNOT Take another white apron if already carrying or wearing one
+                shelves.interact("Take");
+                Condition.sleep(1900);
+                return ctx.inventory.select().id(1005).count() > 0;
+            }
+        }, 500, 100);
+        equipItem(1005, "Wear");
+        travelTo(3014, 3220, 500);
+        travelTo(3014, 3217, 500, 1535);
+        travelTo(3015, 3205, 500);
+        newNpc(1026);
+        continueChat(1);
+        continueChat("Can I get a job here?");
+        continueChat(4);
+        travelTo(3012, 3204, 100);
+//        travelTo(3010, 3207, 100, 2069); //TODO: Check X for in-front of door or not
+        newDoor(2069, 3011, 3204);
+        Condition.wait(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                GameObject rumCrate = ctx.objects.select().id(2071).nearest().poll();
+                rumCrate.interact("Search");
+                return ctx.inventory.select().id(431).count() > 0;
+            }
+        }, 500, 100);
+
+        Condition.sleep(500);
+        travelTo(3011, 3204, 100);
+        newDoor(2069, 3012, 3204);
+        travelTo(pathToPirateFromShop);
+        newNpc(3643);
+        continueChat(6);
+        clearChatMenus();
+        clearChatMenus();
+        continueChat(2);
+        clearChatMenus();
+        continueChat("Ok thanks, I'll go and get it.");
+        continueChat(2);
         travelToInn();
     }
 
     public void travelToInn() {
-//        System.out.println("Starting travel to inn segment");
-//        Tile tempTile = ctx.players.local().tile();
-//        Component spellBook = ctx.widgets.component(161, 64);
-//        spellBook.click();
-//        Condition.sleep(1000);
-//        Component homeTeleport = ctx.widgets.component(218, 4);
-//        homeTeleport.click();
-//        Condition.sleep(500);
-//        Condition.wait(new Callable<Boolean>() {
-//            @Override
-//            public Boolean call() throws Exception {
-//                return ctx.players.local().animation() == -1;
-//            }
-//        });
-//        openInventory();
-//        if (ctx.players.local().tile() == tempTile) inLumbridge = false;
-//        else
+        System.out.println("Starting travel to inn segment");
+        Tile tempTile = ctx.players.local().tile();
+        Component spellBook = ctx.widgets.component(161, 64);
+        spellBook.click();
+        Condition.sleep(1000);
+        Component homeTeleport = ctx.widgets.component(218, 4);
+        homeTeleport.click();
+        Condition.sleep(500);
+        Condition.wait(new Callable<Boolean>() {
+            @Override
+            public Boolean call() throws Exception {
+                return ctx.players.local().animation() == -1;
+            }
+        });
+        openInventory();
+        if (ctx.players.local().tile() == tempTile) inLumbridge = false;
+        else
  inLumbridge = true;
         if (inLumbridge == false) {
             travelTo(pathToFaladorFromSarim);
@@ -204,12 +204,12 @@ public class PiratesTreasure extends PollingScript<ClientContext> {
                 travelTo(pathToInnFromSquare);
             }
         } else if (inLumbridge){
-//            travelTo(pathToVarrokBerriesFromLummy);
-//            if (ctx.inventory.select().id(753).count() == 0 && doingRomeo) {
-//                collectBerries();
-//            }
-//            travelTo(pathToVarrockFromBerries);
-            collectLogs(1);
+            travelTo(pathToVarrokBerriesFromLummy);
+            if (ctx.inventory.select().id(753).count() == 0 && doingRomeo) {
+                collectBerries();
+            }
+            travelTo(pathToVarrockFromBerries);
+//            collectLogs(1);
             if (doingRomeo) romeoQuest();
             travelTo(pathToInnFromSquare);
         }
