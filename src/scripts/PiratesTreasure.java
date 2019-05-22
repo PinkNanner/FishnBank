@@ -66,13 +66,13 @@ public class PiratesTreasure extends PollingScript<ClientContext> {
     }
     public void startQuest() {
         System.out.println("Starting pirates treasure quest");
-        if (!atRedbeardFrank) travelTo(pathToPirateFromDraynor);
-        newNpc(3643);
-        continueChat(1);
-        continueChat("I'm in search of treasure.");
-        continueChat(5);
-        continueChat("Ok, I will bring you some rum");
-        continueChat(6);
+//        if (!atRedbeardFrank) travelTo(pathToPirateFromDraynor);
+//        newNpc(3643);
+//        continueChat(1);
+//        continueChat("I'm in search of treasure.");
+//        continueChat(5);
+//        continueChat("Ok, I will bring you some rum");
+//        continueChat(6);
         travelTo(pathToKaramja);
         newNpc(3644);
         continueChat(2);

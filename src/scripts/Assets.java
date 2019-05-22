@@ -221,7 +221,7 @@ public class Assets extends PollingScript<ClientContext> {
 
         for (int i=0;i<t.length;i++) {
             int finalI = i;
-            System.out.println("FINALI = "+finalI);
+//            System.out.println("FINALI = "+finalI);
             Condition.wait(new Callable<Boolean>() {
                 @Override
                 public Boolean call() throws Exception {
@@ -229,7 +229,7 @@ public class Assets extends PollingScript<ClientContext> {
                     if (ctx.players.local().ctx.movement.destination() != t[finalI]) ctx.movement.newTilePath(t[finalI]).traverse();
 //                    System.out.println("DISTANCE FROM PLAYER TO TARGET = "+ctx.players.local().tile().distanceTo(t[finalI]));
                     if (ctx.players.local().tile().distanceTo(t[finalI]) < 5) { //TODO: Needs to be modified based on distance between previous tiles
-                        System.out.println("DISTANCE FROM PLAYER TO TARGET < 5, RETURNING TRUE");
+//                        System.out.println("DISTANCE FROM PLAYER TO TARGET < 5, RETURNING TRUE");
                         return true;
                     }
                     if (isPlayerAtTile(t[finalI])) return  true;
@@ -241,14 +241,14 @@ public class Assets extends PollingScript<ClientContext> {
     public void travelToReverse(Tile[] t){
         for (int i=t.length;i>-1;i--) {
             int finalI = i;
-            System.out.println("FINALI = "+finalI);
+//            System.out.println("FINALI = "+finalI);
             Condition.wait(new Callable<Boolean>() {
                 @Override
                 public Boolean call() throws Exception {
                     if (ctx.players.local().ctx.movement.destination() != t[finalI])  ctx.movement.newTilePath(t[finalI]).traverse();
 //                    System.out.println("DISTANCE FROM PLAYER TO TARGET = "+ctx.players.local().tile().distanceTo(t[finalI]));
                     if (ctx.players.local().tile().distanceTo(t[finalI]) < 5) {
-                        System.out.println("DISTANCE FROM PLAYER TO TARGET < 5, RETURNING TRUE");
+//                        System.out.println("DISTANCE FROM PLAYER TO TARGET < 5, RETURNING TRUE");
                         return true;
                     }
                     if (isPlayerAtTile(t[finalI])) return  true;

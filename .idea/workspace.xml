@@ -4,7 +4,46 @@
     <bookmark url="file://$PROJECT_DIR$/src/scripts/PiratesTreasure.java" line="303" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="" />
+    <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/scripts/Catherby.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/FishingGuild.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Assets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +55,7 @@
     <session id="-772143692">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -25,38 +64,41 @@
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.24" value="2" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="3" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="10" />
           <entry key="iml" value="1" />
-          <entry key="java" value="35" />
+          <entry key="java" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="10" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="38172" />
+          <entry key="java" value="39448" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="38172" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="JAVA" value="39448" />
+          <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -67,20 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/PiratesTreasure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1989">
-              <caret line="124" column="10" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+            <state relative-caret-position="1156">
+              <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,8 +121,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+            <state relative-caret-position="3043">
+              <caret line="224" column="52" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#10136#10137#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1576">
+              <caret line="98" column="67" selection-end-line="119" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,10 +156,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scripts/FishKaramja.java">
+        <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+            <state relative-caret-position="476">
+              <caret line="64" column="98" selection-start-line="64" selection-start-column="98" selection-end-line="64" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,10 +170,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/TutorialIsland.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3757">
-              <caret line="231" column="21" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
+            <state relative-caret-position="11577">
+              <caret line="778" column="74" selection-start-line="778" selection-start-column="8" selection-end-line="778" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/FishKaramja.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="32" column="9" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8671#8672#0" expanded="true" />
+                <element signature="e#8716#8717#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,7 +227,12 @@
       <find>rese</find>
       <find>wid</find>
       <find>npc</find>
+      <find>newO</find>
+      <find>trave</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -189,8 +263,10 @@
         <option value="$PROJECT_DIR$/src/scripts/AfterTutorial.java" />
         <option value="$PROJECT_DIR$/src/scripts/FishShrimp.java" />
         <option value="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" />
-        <option value="$PROJECT_DIR$/src/scripts/Assets.java" />
         <option value="$PROJECT_DIR$/src/scripts/FishKaramja.java" />
+        <option value="$PROJECT_DIR$/src/scripts/Assets.java" />
+        <option value="$PROJECT_DIR$/src/scripts/Catherby.java" />
+        <option value="$PROJECT_DIR$/src/scripts/FishingGuild.java" />
       </list>
     </option>
   </component>
@@ -200,18 +276,18 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,12 +341,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557336256471" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558563823134" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7088.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -289,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Compound.MassPlay">
+  <component name="RunManager" selected="JAR Application.Play">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -317,7 +394,7 @@
     </configuration>
     <configuration name="Play (1)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -326,7 +403,7 @@
     </configuration>
     <configuration name="Play (2)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -335,7 +412,7 @@
     </configuration>
     <configuration name="Play (3)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -344,7 +421,7 @@
     </configuration>
     <configuration name="Play (4)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -353,7 +430,7 @@
     </configuration>
     <configuration name="Play (5)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -362,7 +439,7 @@
     </configuration>
     <configuration name="Play (6)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -371,16 +448,7 @@
     </configuration>
     <configuration name="Play (7)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
-      <option name="PROGRAM_PARAMETERS" value="runescape" />
-      <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk1.8.0_171\jre" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Play (8)" type="JarApplication" factoryName="JAR Application">
-      <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -389,7 +457,7 @@
     </configuration>
     <configuration name="Play" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7088.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -423,7 +491,6 @@
       <item itemvalue="JAR Application.Play (5)" />
       <item itemvalue="JAR Application.Play (6)" />
       <item itemvalue="JAR Application.Play (7)" />
-      <item itemvalue="JAR Application.Play (8)" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -437,6 +504,21 @@
       <option name="presentableId" value="Default" />
       <updated>1535522475453</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <created>1557344263149</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557344263149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Enabled Pirates Treasure">
+      <created>1557346011384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557346011384</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -451,7 +533,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17377399" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -467,7 +549,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -481,6 +563,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Enabled Pirates Treasure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled Pirates Treasure" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/FishnBank/scripts/GoblinKiller.class" />
@@ -557,18 +644,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/PiratesTreasure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="124" column="10" selection-start-line="124" selection-start-column="8" selection-end-line="124" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="67" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+        <state relative-caret-position="1156">
+          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -577,8 +654,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="119" column="37" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
+        <state relative-caret-position="3043">
+          <caret line="224" column="52" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10136#10137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -587,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/TutorialIsland.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3757">
-          <caret line="231" column="21" selection-start-line="231" selection-start-column="21" selection-end-line="231" selection-end-column="21" />
+        <state relative-caret-position="11577">
+          <caret line="778" column="74" selection-start-line="778" selection-start-column="8" selection-end-line="778" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -597,8 +685,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FishKaramja.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+        <state relative-caret-position="374">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8671#8672#0" expanded="true" />
+            <element signature="e#8716#8717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1576">
+          <caret line="98" column="67" selection-end-line="119" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="64" column="98" selection-start-line="64" selection-start-column="98" selection-end-line="64" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
