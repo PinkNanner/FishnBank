@@ -117,7 +117,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
         }
         else if (ctx.players.local().inMotion() == false && inBank){
             final Npc banker = ctx.npcs.select().id(BANKER_ID).nearest().poll();
-            final GameObject bankBooth = ctx.objects.select().id(6947).nearest().poll();
+            final GameObject bankBooth = ctx.objects.select().id(6943).nearest().poll();
             if (bankBooth.valid() == false) travelTo((r.nextInt(3)+3092),(r.nextInt(4)+3241), 100);
             bankBooth.interact("Bank");
             ctx.bank.depositAllExcept(303, 307, 313);
