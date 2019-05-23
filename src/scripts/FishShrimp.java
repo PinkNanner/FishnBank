@@ -13,6 +13,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
     final static int FISHING_ID[] = {1524, 1525, 1526};
     final static int BANKER_ID[] = {394, 395};
     int inventories, inventMax;
+    String action;
     static Random r = new Random();
 //    final static Area AREA_BANK = new Area(); Causes SEVERE ERROR ???
     static Tile[] tileToBank;
@@ -73,7 +74,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
             if ((ctx.players.local().animation() == -1)){
                 ctx.camera.turnTo(fishingSpot);
                 Condition.sleep(300);
-                fishingSpot.interact("Small Net");
+                fishingSpot.interact(action);
             }
         } else if ((ctx.players.local().animation() == -1) && inBank){
             ctx.movement.newTilePath(new Tile(r.nextInt(4)+3088, r.nextInt(3)+3227)).traverse(); //to fish
@@ -113,11 +114,12 @@ public class FishShrimp extends PollingScript<ClientContext> {
         }
         else if (ctx.players.local().inMotion() == false && inBank){
             final Npc banker = ctx.npcs.select().id(BANKER_ID).nearest().poll();
-            if (banker.valid() == false) travelTo((r.nextInt(3)+3092),(r.nextInt(4)+3241), 100);
-            banker.interact("Bank");
-            ctx.bank.depositAllExcept(303);
+            final GameObject bankBooth = ctx.objects.select().id(313).nearest().poll();
+            if (bankBooth.valid() == false) travelTo((r.nextInt(3)+3092),(r.nextInt(4)+3241), 100);
+            bankBooth.interact("Bank");
+            ctx.bank.depositAllExcept(303, 307, 313);
             inventories++;
-            if (ctx.players.local().ctx.inventory.select().count() == 1) fullInvent = false;
+            if (ctx.players.local().ctx.inventory.select().count() <= 2) fullInvent = false;
         }
 
     }

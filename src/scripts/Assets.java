@@ -65,11 +65,11 @@ public class Assets extends PollingScript<ClientContext> {
     }
 
     public void newObject(int id, String action) {
-        GameObject target = ctx.objects.select().id(id).nearest().poll();
+        final GameObject target = ctx.objects.select().id(id).nearest().poll();
         Condition.wait(new Callable<Boolean>() {
             public Boolean call() throws Exception {
-                target.interact(action);
-                return target.valid();
+                return target.interact(action);
+//                return target.valid();
             }
         }, 500, 1000);
     }

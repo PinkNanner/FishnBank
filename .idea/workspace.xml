@@ -5,44 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scripts/Catherby.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/FishingGuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$22.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$23.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$24.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$25.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$26.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/PiratesTreasure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/FishShrimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/FishShrimp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,14 +55,14 @@
         <counts>
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="39448" />
+          <entry key="java" value="39529" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="39448" />
+          <entry key="JAVA" value="39529" />
           <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
@@ -121,21 +86,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3043">
-              <caret line="224" column="52" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
+            <state relative-caret-position="313">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10136#10137#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="986">
+              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="338" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,7 +119,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -261,12 +225,12 @@
         <option value="$PROJECT_DIR$/src/scripts/GrandExchange.java" />
         <option value="$PROJECT_DIR$/src/scripts/TutorialIsland.java" />
         <option value="$PROJECT_DIR$/src/scripts/AfterTutorial.java" />
-        <option value="$PROJECT_DIR$/src/scripts/FishShrimp.java" />
         <option value="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" />
         <option value="$PROJECT_DIR$/src/scripts/FishKaramja.java" />
-        <option value="$PROJECT_DIR$/src/scripts/Assets.java" />
         <option value="$PROJECT_DIR$/src/scripts/Catherby.java" />
         <option value="$PROJECT_DIR$/src/scripts/FishingGuild.java" />
+        <option value="$PROJECT_DIR$/src/scripts/Assets.java" />
+        <option value="$PROJECT_DIR$/src/scripts/FishShrimp.java" />
       </list>
     </option>
   </component>
@@ -276,7 +240,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -347,7 +311,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558563823134" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558600022714" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7088.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -366,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.Play">
+  <component name="RunManager" selected="Compound.MassPlay">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -518,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557346011384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Enabled Pirates Treasure">
+      <created>1558563855799</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558563855799</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -532,6 +503,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -652,27 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3043">
-          <caret line="224" column="52" selection-start-line="224" selection-start-column="52" selection-end-line="224" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10136#10137#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/TutorialIsland.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11577">
@@ -709,6 +660,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="64" column="98" selection-start-line="64" selection-start-column="98" selection-end-line="64" selection-end-column="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="338" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
