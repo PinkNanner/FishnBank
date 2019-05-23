@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishShrimp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/FishShrimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/FishShrimp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,14 +53,14 @@
         <counts>
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="39551" />
+          <entry key="java" value="39552" />
           <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="39551" />
+          <entry key="JAVA" value="39552" />
           <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
@@ -107,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+            <state relative-caret-position="493">
+              <caret line="119" column="69" selection-start-line="119" selection-start-column="69" selection-end-line="119" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -320,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558601783304" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558602783479" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7088.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -339,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Compound.MassPlay">
+  <component name="RunManager" selected="JAR Application.Play">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -512,7 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1558600353973</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Enabled Pirates Treasure">
+      <created>1558601732539</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1558601732539</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Enabled Pirates Treasure">
+      <created>1558601792767</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558601792767</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -526,6 +529,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -700,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="493">
+          <caret line="119" column="69" selection-start-line="119" selection-start-column="69" selection-end-line="119" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
