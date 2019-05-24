@@ -46,6 +46,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
         if (ctx.players.local().ctx.inventory.select().id(307).count() > 0){
             action = "Bait";
         } else action = "Small Net";
+        resetCamera();
         inventories = 0;
         inventMax = 100;
     }

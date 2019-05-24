@@ -82,6 +82,7 @@ public class FishingGuild extends PollingScript<ClientContext> {
             @Override
             public Boolean call() throws Exception {
                 a.newObject(10355, "Bank");
+//                Condition.sleep(1200);
                 return ctx.bank.depositAllExcept(301, 311);
 //                    return ctx.players.local().ctx.inventory.count() == 1;
             }
