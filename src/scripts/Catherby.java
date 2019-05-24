@@ -81,7 +81,7 @@ public class Catherby extends PollingScript<ClientContext> {
             Condition.wait(new Callable<Boolean>() {
                 @Override
                 public Boolean call() throws Exception {
-                    a.newObject(6943, "Bank");
+                    a.newObject(10355, "Bank");
                     return ctx.bank.depositAllExcept(301, 311);
 //                    return ctx.players.local().ctx.inventory.count() == 1;
                 }

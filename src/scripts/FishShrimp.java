@@ -77,7 +77,9 @@ public class FishShrimp extends PollingScript<ClientContext> {
             if ((ctx.players.local().animation() == -1)){
                 ctx.camera.turnTo(fishingSpot);
                 Condition.sleep(300);
-                fishingSpot.interact(action);
+                if (action == "Bait" && ctx.players.local().ctx.inventory.select().id(313).count() > 0) {
+                    fishingSpot.interact(action);
+                } else fishingSpot.interact(action);
             }
         } else if ((ctx.players.local().animation() == -1) && inBank){
             ctx.movement.newTilePath(new Tile(r.nextInt(4)+3088, r.nextInt(3)+3227)).traverse(); //to fish
@@ -117,7 +119,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
         }
         else if (ctx.players.local().inMotion() == false && inBank){
             final Npc banker = ctx.npcs.select().id(BANKER_ID).nearest().poll();
-            final GameObject bankBooth = ctx.objects.select().id(6943).nearest().poll();
+            final GameObject bankBooth = ctx.objects.select().id(10355).nearest().poll();
             if (bankBooth.valid() == false) travelTo((r.nextInt(3)+3092),(r.nextInt(4)+3241), 100);
             bankBooth.interact("Bank");
             ctx.bank.depositAllExcept(303, 307, 313);
