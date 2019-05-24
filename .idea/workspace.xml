@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/scripts/PiratesTreasure.java" line="303" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/scripts/Catherby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Catherby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/FishShrimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/FishShrimp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/FishingGuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/FishingGuild.java" afterDir="false" />
-    </list>
+    <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,14 +52,14 @@
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
           <entry key="java" value="39640" />
-          <entry key="txt" value="38" />
+          <entry key="txt" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
           <entry key="JAVA" value="39640" />
-          <entry key="PLAIN_TEXT" value="54" />
+          <entry key="PLAIN_TEXT" value="75" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -95,7 +91,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -121,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -313,9 +309,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558667529904" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558668953217" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7088.jar!/" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -526,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558602791739</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed new Bank ID's">
+      <created>1558667550484</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558667550484</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -540,7 +543,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -576,7 +578,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Enabled Pirates Treasure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enabled Pirates Treasure" />
+    <MESSAGE value="Fixed new Bank ID's" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed new Bank ID's" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/FishnBank/scripts/GoblinKiller.class" />
@@ -703,16 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -721,6 +714,16 @@
             <element signature="imports" expanded="true" />
             <element signature="e#14448#14449#0" expanded="true" />
             <element signature="e#14493#14494#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
