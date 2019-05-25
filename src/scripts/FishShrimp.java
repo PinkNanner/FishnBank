@@ -53,9 +53,11 @@ public class FishShrimp extends PollingScript<ClientContext> {
 
     @Override
     public void poll() {
-//        while (inventories < inventMax){
-            fishForever();
-//        }
+        if (action == "Bait") {
+            while (ctx.players.local().ctx.inventory.select().id(313).count() > 0) {
+                fishForever();
+            }
+        }else fishForever();
 
     }
     public void fishForever(){
@@ -68,7 +70,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
         } else {
             flee();
         }
-        if (ctx.players.local().inCombat()) inPain = true;
+        if (ctx.players.local().healthPercent() < 50) inPain = true;
     }
 
     public void fish(){
@@ -78,8 +80,10 @@ public class FishShrimp extends PollingScript<ClientContext> {
             if ((ctx.players.local().animation() == -1)){
                 ctx.camera.turnTo(fishingSpot);
                 Condition.sleep(300);
-                if (action == "Bait" && ctx.players.local().ctx.inventory.select().id(313).count() > 0) {
-                    fishingSpot.interact(action);
+                if (action == "Bait") {
+                    if (ctx.players.local().ctx.inventory.select().id(313).count() > 0) {
+                        fishingSpot.interact(action);
+                    }
                 } else fishingSpot.interact(action);
             }
         } else if ((ctx.players.local().animation() == -1) && inBank){
@@ -119,7 +123,7 @@ public class FishShrimp extends PollingScript<ClientContext> {
 //            System.out.println("inBank = true");
         }
         else if (ctx.players.local().inMotion() == false && inBank){
-            final Npc banker = ctx.npcs.select().id(BANKER_ID).nearest().poll();
+//            final Npc banker = ctx.npcs.select().id(BANKER_ID).nearest().poll();
             final GameObject bankBooth = ctx.objects.select().id(10355).nearest().poll();
             if (bankBooth.valid() == false) travelTo((r.nextInt(3)+3092),(r.nextInt(4)+3241), 100);
             bankBooth.interact("Bank");

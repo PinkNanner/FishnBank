@@ -6,12 +6,135 @@
   <component name="ChangeListManager">
     <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FishnBank.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FishnBank.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Assets$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishingGuild$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishingGuild$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/FishingGuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/FishingGuild.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/Trade$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/Trade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/AfterTutorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Assets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Catherby$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Catherby$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Catherby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishKaramja$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishKaramja$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishKaramja$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishKaramja.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishShrimp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishingGuild$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishingGuild$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/FishingGuild.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GrandExchange.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$12$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$13$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$27.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$28.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/PiratesTreasure.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$16$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$18$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$23.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$24.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$25$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$25$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$25$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$25.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$26.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$27.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$28.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$29.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$30.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$31.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$32.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/TutorialIsland.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/FishShrimp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/FishShrimp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/FishingGuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/FishingGuild.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,10 +158,11 @@
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="3" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="20" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,14 +183,14 @@
         <counts>
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="39657" />
+          <entry key="java" value="39769" />
           <entry key="txt" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="39657" />
+          <entry key="JAVA" value="39769" />
           <entry key="PLAIN_TEXT" value="75" />
         </counts>
       </usages-collector>
@@ -90,24 +214,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
+            <state relative-caret-position="901">
               <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2388#2389#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-765">
-              <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state relative-caret-position="493">
+              <caret line="56" column="77" selection-start-line="56" selection-start-column="77" selection-end-line="56" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#14448#14449#0" expanded="true" />
-                <element signature="e#14493#14494#0" expanded="true" />
+                <element signature="e#14642#14643#0" expanded="true" />
+                <element signature="e#14687#14688#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,7 +241,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
+            <state relative-caret-position="1190">
               <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -125,11 +250,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="83" column="43" lean-forward="true" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+            <state relative-caret-position="437">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -235,9 +360,9 @@
         <option value="$PROJECT_DIR$/src/scripts/PiratesTreasure.java" />
         <option value="$PROJECT_DIR$/src/scripts/FishKaramja.java" />
         <option value="$PROJECT_DIR$/src/scripts/Catherby.java" />
-        <option value="$PROJECT_DIR$/src/scripts/FishShrimp.java" />
         <option value="$PROJECT_DIR$/src/scripts/Assets.java" />
         <option value="$PROJECT_DIR$/src/scripts/FishingGuild.java" />
+        <option value="$PROJECT_DIR$/src/scripts/FishShrimp.java" />
       </list>
     </option>
   </component>
@@ -259,6 +384,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,17 +407,6 @@
             <path>
               <item name="FishnBank" type="b2602c69:ProjectViewProjectNode" />
               <item name="FishnBank" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FishnBank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FishnBank" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FishnBank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FishnBank" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,13 +423,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558711970330" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558773871277" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7078.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -332,7 +446,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.Play (3)">
+  <component name="RunManager" selected="Compound.MassPlay">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -533,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558667550484</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Fixed new Bank ID's">
+      <created>1558711983689</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558711983689</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -549,7 +670,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -669,6 +790,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2388#2389#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/TutorialIsland.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11577">
@@ -691,20 +833,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
+    <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="68" column="48" selection-start-line="68" selection-start-column="48" selection-end-line="68" selection-end-column="48" />
+        <state relative-caret-position="437">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -713,22 +845,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FishShrimp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="493">
+          <caret line="56" column="77" selection-start-line="56" selection-start-column="77" selection-end-line="56" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14448#14449#0" expanded="true" />
-            <element signature="e#14493#14494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/FishingGuild.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="83" column="43" lean-forward="true" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#14642#14643#0" expanded="true" />
+            <element signature="e#14687#14688#0" expanded="true" />
           </folding>
         </state>
       </provider>
