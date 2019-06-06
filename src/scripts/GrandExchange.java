@@ -126,6 +126,7 @@ public class GrandExchange extends ClientAccessor {
         if (!cic.valid())
             return false;
 
+        Condition.sleep(500);
         ctx.input.send(cic.name.toLowerCase());
 
         if(!Condition.wait(new Callable<Boolean>() {

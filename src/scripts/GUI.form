@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="scripts.GUI">
+  <grid id="27dc6" binding="panelMain" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="214" height="37"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="ca3b3" class="javax.swing.JComboBox" binding="comboBoxJobs">
+        <constraints/>
+        <properties>
+          <model>
+            <item value="Logs/Gems"/>
+            <item value="Bolts + Bolt Tips"/>
+          </model>
+        </properties>
+      </component>
+      <component id="6287f" class="javax.swing.JButton" binding="startButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Start"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
