@@ -30,9 +30,13 @@ public class Fletcher extends PollingScript<ClientContext> {
     private final int FEATHER = 314;
     private final int IRON_ARROW_TIPS = 40;
     private final int ARROW_SHAFT = 52;
+    private final int HEADLESS_ARROW = 53;
 
     private final int WILLOW_LOGS = 1519;
     private final int WILLOW_LONGBOW_U = 58;
+
+    private final int OAK_LOGS = 1521;
+    private final int OAK_LONGBOW_U = 56;
 
     private final int RUBY = 1603;
     private final int EMERALD = 1605;
@@ -44,9 +48,9 @@ public class Fletcher extends PollingScript<ClientContext> {
 
     ArrayList<Integer> FLETCHING_LIST = new ArrayList<>();
 
-
     boolean banking = true, STOPPED = false, newStage = true;
-    int animCounter = 0, stage = 0, type = 2;
+    int animCounter = 0, stage = 0, type = 2, fletchLevel = 1;
+    int fletchItem0, fletchItem1;
     Random r = new Random();
     Integer fletchType = 0;
     Assets a = new Assets();
@@ -86,115 +90,18 @@ public class Fletcher extends PollingScript<ClientContext> {
             FLETCHING_LIST.add(WILLOW_LOGS);
             FLETCHING_LIST.add(YEW_LOGS);
 
-            //Determine starting action
-            if (ctx.players.local().ctx.inventory.count() <= 1){
-                System.out.println("Empty invent or has chisel");
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        bankBooth.interact("Bank");
-                        return ctx.bank.open();
-                    }
-                }, 50, 100);
-//            if (ctx.players.local().ctx.inventory.select().id(KNIFE).count() <=0){
-//                ctx.bank.withdraw(KNIFE, 1);
-//            }
-                if (type == 0) {
-                    for (int i = 0; i < FLETCHING_LIST.size(); i++) {
-                        if (ctx.bank.select().id(FLETCHING_LIST.get(i)).count() > 0) {
-                            System.out.println("Has fletchable item: " + FLETCHING_LIST.get(i));
-                            ctx.bank.withdraw(FLETCHING_LIST.get(i), Bank.Amount.ALL);
-                            fletchType = FLETCHING_LIST.get(i);
-                            break;
-                        }
-                    }
-                }
+            setStage();
 
-                if (type == 2){
-                    Condition.wait(new Callable<Boolean>() {
-                        public Boolean call() throws Exception {
-                            if (stage == 0){
-                                ctx.bank.depositAllExcept(KNIFE, CHISEL);
-                                return ctx.players.local().ctx.inventory.count() == 1;
-                            }
-                            if (stage == 1){
-                                ctx.bank.depositInventory();
-                                return ctx.players.local().ctx.inventory.count() == 0;
-                            }
-
-                            return false;
-                        }
-                    }, 50, 100);
-
-                    Condition.wait(new Callable<Boolean>() {
-                        public Boolean call() throws Exception {
-
-                            if (stage == 0) {
-                                ctx.bank.depositAllExcept(KNIFE, CHISEL);
-                                return ctx.bank.withdraw(LOGS, Bank.Amount.ALL);
-                            }
-                            if (ctx.players.local().ctx.inventory.select().id(LOGS).count() == 0) {
-                                System.out.println("Detecting no logs, increasing stage");
-                                stage++;
-                                System.out.println("stage = "+stage);
-                                return true;
-                            }
-
-
-                            if (stage == 1) {
-                                ctx.bank.depositAllExcept(ARROW_SHAFT, FEATHER);
-                                ctx.bank.withdraw(ARROW_SHAFT, Bank.Amount.ALL);
-                                ctx.bank.withdraw(FEATHER, Bank.Amount.ALL);
-                                return ctx.players.local().ctx.inventory.count() == 2;
-                            }
-                            if (ctx.players.local().ctx.inventory.select().id(ARROW_SHAFT).count() == 0) {
-                                System.out.println("Detecting no arrow shafts, increasing stage");
-                                stage++;
-                                System.out.println("stage = "+stage);
-                                return true;
-                            }
-
-
-                            return false;
-                        }
-                    }, 50, 100);
-                }
-
-                ctx.bank.close();
-                banking = false;
-            }
-
-            if (ctx.players.local().ctx.inventory.count() > 1){ //TODO: make a list of all logs/gems required to start up, if none of those are found then empty inventory
-                //TODO: and grab whichever one if present in the bank
-                System.out.println("Full inventory");
-                for (int i=0;i<FLETCHING_LIST.size();i++){
-                    if (ctx.players.local().ctx.inventory.select().id(FLETCHING_LIST.get(i)).count() > 0){
-                        System.out.println("Has fletchable item: "+FLETCHING_LIST.get(i));
-                        ctx.bank.depositAllExcept(KNIFE, CHISEL);
-                        ctx.bank.withdraw(FLETCHING_LIST.get(i), Bank.Amount.ALL);
-                        fletchType = FLETCHING_LIST.get(i);
-                        break;
-                    }
-                }
-            }
-//            else {
-//                Condition.wait(new Callable<Boolean>() {
-//                    public Boolean call() throws Exception {
-//                        bankBooth.interact("Bank");
-//                        return ctx.bank.open();
-//                    }
-//                }, 50, 100);
-//                ctx.bank.depositAllExcept(KNIFE, CHISEL);
-//            for (int i=0;i<FLETCHING_LIST.size();i++){
-//                if (ctx.bank.select().id(FLETCHING_LIST.get(i)).count() > 0) {
-//                    System.out.println("Has fletchable item: "+FLETCHING_LIST.get(i));
-//                    ctx.bank.withdraw(FLETCHING_LIST.get(i), Bank.Amount.ALL);
-//                    fletchType = FLETCHING_LIST.get(i);
-//                    break;
-//                }
-//            }
-//                ctx.bank.close();
-//            }
         }
+
+    public void setStage(){
+        if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 24) stage = 0;
+        else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 34) stage = 3;
+        else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 39) stage = 4;
+        else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 49) stage = 5;
+        else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 54) stage = 6;
+        else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 64) stage = 7;
+    }
 
 
 
@@ -228,10 +135,11 @@ public class Fletcher extends PollingScript<ClientContext> {
 
     public void bank(Integer type) {
 //        System.out.println("Banking");
+        banking = false;
         GameObject bankBooth = ctx.objects.select().id(BANK_BOOTH).nearest().poll();
         GameObject exchangeBooth = ctx.objects.select().id(EXCHANGE_BOOTH).nearest().poll();
 
-        if (ctx.players.local().ctx.inventory.select().id(fletchType).count() == 0) {
+//        if (ctx.players.local().ctx.inventory.select().id(fletchType).count() == 0) {
             if (r.nextInt(10) >= 6) {
                 System.out.println("Doing long wait");
                 Condition.sleep(4500 + r.nextInt(4500));
@@ -253,7 +161,6 @@ public class Fletcher extends PollingScript<ClientContext> {
                     if (ctx.players.local().ctx.inventory.select().id(FLETCHING_LIST.get(i)).count() > 0) {
                         ctx.bank.depositAllExcept(KNIFE, CHISEL);
                         System.out.println("Has fletchable item: " + FLETCHING_LIST.get(i));
-                        ctx.bank.withdraw(FLETCHING_LIST.get(i), Bank.Amount.ALL);
                         fletchType = FLETCHING_LIST.get(i);
                         break;
                     }
@@ -274,56 +181,122 @@ public class Fletcher extends PollingScript<ClientContext> {
 
             }
 
-            if (type == 2){ //Bank
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        if (stage == 0){
-                            ctx.bank.depositAllExcept(KNIFE);
-                            if (ctx.players.local().ctx.inventory.count() == 0) ctx.bank.withdraw(KNIFE, 1);
-                            return ctx.players.local().ctx.inventory.count() == 1;
+            if (type == 2){ //Levelling guide bank commands
+                        if (stage == 0){ //Cut logs into shafts
+                            bankingOptions("LOGS", KNIFE, LOGS, 99);
                         }
-                        if (stage == 1){
-                            ctx.bank.depositInventory();
-                            return ctx.players.local().ctx.inventory.count() == 0;
+                        else if (stage == 1){
+                            bankingOptions("ATTACH", ARROW_SHAFT, FEATHER, 99);
                         }
-
-                        return false;
-                    }
-                }, 50, 100);
-
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-
-                        if (stage == 0) {
-                            ctx.bank.depositAllExcept(KNIFE, CHISEL);
-                            return ctx.bank.withdraw(LOGS, Bank.Amount.ALL);
+                        else if (stage == 2){
+                            bankingOptions("ATTACH", HEADLESS_ARROW, IRON_ARROW_TIPS, 25);
                         }
-
-                        if (stage == 1) {
-                            ctx.bank.withdraw(ARROW_SHAFT, Bank.Amount.ALL);
-                            ctx.bank.withdraw(FEATHER, Bank.Amount.ALL);
-                            return ctx.players.local().ctx.inventory.count() == 2;
+                        else if (stage == 3){
+                            bankingOptions("LOGS", KNIFE, OAK_LOGS, 35);
                         }
-                        return false;
-                    }
-                }, 50, 100);
-                if (stage == 0) {
-                    if (ctx.players.local().ctx.inventory.select().id(LOGS).count() == 0) {
-                        System.out.println("Detecting no logs, increasing stage");
-                        stage++;
-                    }
-                }
-                if (stage == 1){
-                    if (ctx.players.local().ctx.inventory.select().id(ARROW_SHAFT).count() == 0 || ctx.players.local().ctx.inventory.select().id(FEATHER).count() == 0) {
-                        System.out.println("Detecting no arrow shafts or feathers, increasing stage");
-                        stage++;
-                    }
-                }
+                        else if (stage == 4){
+                            bankingOptions("LOGS", KNIFE, WILLOW_LOGS, 40);
+                        }
+                        else if (stage == 5){
+                            bankingOptions("LOGS", KNIFE, WILLOW_LOGS, 50);
+                        }
+                        else if (stage == 6){
+                            bankingOptions("LOGS", KNIFE, MAPLE_LOGS, 55);
+                        }
+                        else if (stage == 7){
+                            bankingOptions("LOGS", KNIFE, MAPLE_LOGS, 65);
+                        }
             }
-            ctx.bank.close();
-            banking = false;
+            if (banking == false) ctx.bank.close();
+//            banking = false;
+    }
+
+    public void bankingOptions(String option, int item0, int item1, int maxLevel){
+        if (option == "LOGS") {
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositAllExcept(KNIFE);
+                    return ctx.players.local().ctx.inventory.count() <= 1;
+                }
+            }, 10, 100);
+
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositAllExcept(KNIFE);
+                    if (ctx.players.local().ctx.inventory.count() == 0) ctx.bank.withdraw(KNIFE, 1);
+                    if (ctx.players.local().ctx.inventory.count() == 0) return false;
+                    return ctx.bank.withdraw(item1, Bank.Amount.ALL);
+                }
+            }, 10, 100);
+        }
+
+        if (option == "GEMS") {
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositAllExcept(CHISEL);
+                    return ctx.players.local().ctx.inventory.count() <= 1;
+                }
+            }, 10, 100);
+
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositAllExcept(CHISEL);
+                    if (ctx.players.local().ctx.inventory.count() == 0) ctx.bank.withdraw(CHISEL, 1);
+                    if (ctx.players.local().ctx.inventory.count() == 0) return false;
+                    return ctx.bank.withdraw(item1, Bank.Amount.ALL);
+                }
+            }, 50, 100);
+        }
+
+        if (option == "ATTACH"){
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositAllExcept(item0, item1);
+                    return ctx.players.local().ctx.inventory.count() <= 1;
+                }
+            }, 10, 100);
+
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositAllExcept(item0, item1);
+                    ctx.bank.withdraw(item0, Bank.Amount.ALL);
+                    ctx.bank.withdraw(item1, Bank.Amount.ALL);
+                    return ctx.players.local().ctx.inventory.count() == 2;
+                }
+            }, 10, 100);
+
+        }
+
+        if (option == "STRING"){
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositInventory();
+                    return ctx.players.local().ctx.inventory.count() == 0;
+                }
+            }, 10, 100);
+
+            Condition.wait(new Callable<Boolean>() {
+                public Boolean call() throws Exception {
+                    ctx.bank.depositInventory();
+                    ctx.bank.withdraw(item0, 14);
+                    ctx.bank.withdraw(item1, 14);
+                    return ctx.players.local().ctx.inventory.isFull();
+                }
+            }, 10, 100);
+        }
+        fletchItem0 = item0;
+        fletchItem1 = item1;
+        if (ctx.players.local().ctx.inventory.select().id(item0).count() == 0 || ctx.players.local().ctx.inventory.select().id(item1).count() == 0 || ctx.skills.level(Constants.SKILLS_FLETCHING) >= maxLevel && type == 2) {
+            System.out.println("Detecting no fletching items or at max level, increasing stage");
+            stage++;
+            banking = true;
+            return;
         }
     }
+
+
+
+
 
     public void checkBanking(){
         if (type == 0) {
@@ -333,15 +306,8 @@ public class Fletcher extends PollingScript<ClientContext> {
         }
 
         if (type == 2) {
-            if (stage == 0) {
-                if (ctx.players.local().ctx.inventory.select().id(LOGS).count() == 0) {
-                    banking = true;
-                }
-            }
-            if (stage == 1) {
-                if (ctx.players.local().ctx.inventory.select().id(ARROW_SHAFT).count() == 0) {
-                    banking = true;
-                }
+            if (ctx.players.local().ctx.inventory.select().id(fletchItem0).count() == 0 || ctx.players.local().ctx.inventory.select().id(fletchItem1).count() == 0) {
+                banking = true;
             }
         }
 
@@ -388,18 +354,6 @@ public class Fletcher extends PollingScript<ClientContext> {
                                 return ctx.widgets.component(270, 14).click();
                             }
                         }, 50, 100);
-
-//                    Condition.wait(new Callable<Boolean>() {
-//                        public Boolean call() throws Exception {
-//                            return ctx.widgets.component(270, 15).click();
-//                        }
-//                    }, 50, 100);
-
-//                        Condition.wait(new Callable<Boolean>() {
-//                            public Boolean call() throws Exception {
-//                                return ctx.widgets.component(270, 16).click();
-//                            }
-//                        }, 50, 100);
                     }
                     }
                     if (type == 1 ) { //FOR BOLTS + TIPS AND ARROWS
@@ -415,86 +369,110 @@ public class Fletcher extends PollingScript<ClientContext> {
                     if (type == 2) { //TRAINING GUIDE TO 65
                         //Use numbers to determine which stage of training player is on
 //                        System.out.println("Fletch type = 1");
-                        if (stage == 0){
-//                            System.out.println("Stage = 0");
-                            if (ctx.players.local().animation() == -1 && animCounter > 25) {
-                                animCounter = 0;
-                                if (newStage) startNewStage();
-                                Item knife = ctx.inventory.select().id(KNIFE).poll();
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        if (knife.valid() == false) return true;
-                                        System.out.println("Using knife");
-                                        return knife.interact("Use");
-                                    }
-                                }, 50, 100);
 
-                                Item fletchItem = ctx.inventory.select().id(LOGS).poll();
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        System.out.println("Using logs");
-                                        return fletchItem.interact("Use");
-                                    }
-                                }, 50, 100);
 
-                                Component fletchingScreen = ctx.widgets.component(270, 0);
-
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        return fletchingScreen.valid();
-                                    }
-                                }, 50, 100);
-
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        return ctx.widgets.component(270, 14).click();
-                                    }
-                                }, 50, 100);
-                            }
-
-//                            stage++;
+                        if (stage == 0){ // Logs into arrow shafts
+                            fletchingOptions("LOGS", LOGS, 0);
                         }
-
-
-                        if (stage == 1 ){
-//                            System.out.println("Stage = 1");
-                            if (ctx.players.local().animation() == -1 && animCounter > 110) {
-                                animCounter = 0;
-                                Item arrowShaft = ctx.inventory.select().id(LOGS).poll();
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        return arrowShaft.interact("Use");
-                                    }
-                                }, 50, 100);
-
-                                Item feather = ctx.inventory.select().id(LOGS).poll();
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        return feather.interact("Use");
-                                    }
-                                }, 50, 100);
-
-                                Component fletchingScreen = ctx.widgets.component(270, 0);
-
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        return fletchingScreen.valid();
-                                    }
-                                }, 50, 100);
-
-                                Condition.wait(new Callable<Boolean>() {
-                                    public Boolean call() throws Exception {
-                                        return ctx.widgets.component(270, 14).click();
-                                    }
-                                }, 50, 100);
-                            }
+                        if (stage == 1 ){ // Attach feathers to arrow shafts
+                            fletchingOptions("ATTACH", ARROW_SHAFT, FEATHER);
                         }
-
+                        if (stage == 2){
+                            fletchingOptions("ATTACH", HEADLESS_ARROW, IRON_ARROW_TIPS);
+                        }
+                        if (stage == 3){ // Oak Logs into longbows unfinished
+                            fletchingOptions("LOGS", OAK_LOGS, 2);
+                        }
+                        if (stage == 4){ // Willow Logs into shortbows unfinished
+                            fletchingOptions("LOGS", WILLOW_LOGS, 1);
+                        }
+                        if (stage == 5){ // Willow Logs into longbows unfinished
+                            fletchingOptions("LOGS", WILLOW_LOGS, 2);
+                        }
+                        if (stage == 6){ // Maple Logs into longbows unfinished
+                            fletchingOptions("LOGS", MAPLE_LOGS, 1);
+                        }
+                        if (stage == 7){ // Maple Logs into longbows unfinished
+                            fletchingOptions("LOGS", MAPLE_LOGS, 2);
+                        }
                     }
-                }
+    }
 
+    public void fletchingOptions(String option, int item0, int item1) { //FOR "LOGS" option, item0 = the log type and item1 = the menu option
+        if (option == "LOGS") { //to be used for gems as well
+            if (ctx.players.local().animation() == -1 && animCounter > 25) {
+                animCounter = 0;
+                if (newStage) startNewStage();
+                Item knife = ctx.inventory.select().id(KNIFE).poll();
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        if (knife.valid() == false) return true;
+                        System.out.println("Using knife");
+                        return knife.interact("Use");
+                    }
+                }, 50, 100);
 
-        public void startNewStage(){
+                Item fletchItem = ctx.inventory.select().id(item0).poll();
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        System.out.println("Using logs");
+                        return fletchItem.interact("Use");
+                    }
+                }, 50, 100);
+
+                Component fletchingScreen = ctx.widgets.component(270, 0);
+
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return fletchingScreen.valid();
+                    }
+                }, 50, 100);
+
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return ctx.widgets.component(270, 14+item1).click();
+                    }
+                }, 50, 100);
+            }
+        }
+        if (option == "ATTACH"){
+            if (ctx.players.local().animation() == -1 && animCounter > 190) {
+                if (r.nextInt(10) >= 7){
+                    Condition.sleep(r.nextInt(4500));
+                } else Condition.sleep(r.nextInt(200));
+                animCounter = 0;
+                Item firstItem = ctx.inventory.select().id(item0).poll();
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return firstItem.interact("Use");
+                    }
+                }, 50, 100);
+
+                Item secondItem = ctx.inventory.select().id(item1).poll();
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return secondItem.interact("Use");
+                    }
+                }, 50, 100);
+
+                Component fletchingScreen = ctx.widgets.component(270, 0);
+
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return fletchingScreen.valid();
+                    }
+                }, 50, 100);
+
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return ctx.widgets.component(270, 14).click();
+                    }
+                }, 50, 100);
+            }
+        }
+    }
+
+    public void startNewStage(){
 
             }
 
