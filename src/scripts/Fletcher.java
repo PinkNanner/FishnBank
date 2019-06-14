@@ -4,12 +4,12 @@ import org.powerbot.script.Condition;
 import org.powerbot.script.PollingScript;
 import org.powerbot.script.Script;
 import org.powerbot.script.rt4.*;
+import org.powerbot.script.rt4.Component;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.concurrent.Callable;
@@ -46,41 +46,37 @@ public class Fletcher extends PollingScript<ClientContext> {
 
     private final int YEW_LOGS = 1515;
 
-    ArrayList<Integer> FLETCHING_LIST = new ArrayList<>();
+    static ArrayList<Integer> FLETCHING_LIST = new ArrayList<>();
 
-    boolean banking = true, STOPPED = false, newStage = true;
-    int animCounter = 0, stage = 0, type = 2, fletchLevel = 1;
+    GuiApp1 ui = new GuiApp1();
+    boolean banking = true, STOPPED = false, newStage = true, PAUSED = true, firstStart = true;
+    Boolean ruby, emerald, diamond, sapphire, opal, amethyst, jade, pearl, topaz, dragonstone, onyx;
+    ArrayList<Boolean> gemArray = new ArrayList();
+    int animCounter = 0, stage = 0, type = 1;
     int fletchItem0, fletchItem1;
     Random r = new Random();
     Integer fletchType = 0;
-    Assets a = new Assets();
 
     public void start(){
-//        SwingUtilities.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                GUI gui = new GUI();
-//                gui.start();
-////                gui.setVisible(true);
-//            }
-//        });
-//        SwingUtilities.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                FletchGui gui = new FletchGui();
-//                gui.start();
-////                gui.setVisible(true);
-//            }
-//        });
-    setup();
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
+        resetCamera();
+        setup();
         }
 
-        public void setup(){
-            a.resetCamera();
 
-            //SETUP OBJECTS
-            GameObject bankBooth = ctx.objects.select().id(BANK_BOOTH).nearest().poll();
-            GameObject exchangeBooth = ctx.objects.select().id(EXCHANGE_BOOTH).nearest().poll();
+        public void setup(){
+
+        gemArray.add(ruby);gemArray.add(emerald);
+        gemArray.add(diamond);gemArray.add(sapphire);
+        gemArray.add(opal);gemArray.add(amethyst);
+        gemArray.add(jade);gemArray.add(pearl);
+        gemArray.add(topaz);gemArray.add(dragonstone);
+        gemArray.add(onyx);
 
             //SETUP FLETCHING LIST
             FLETCHING_LIST.add(RUBY);
@@ -90,7 +86,15 @@ public class Fletcher extends PollingScript<ClientContext> {
             FLETCHING_LIST.add(WILLOW_LOGS);
             FLETCHING_LIST.add(YEW_LOGS);
 
-            setStage();
+
+
+            //GET INFO FROM GUI SETTINGS
+            ui.getGems();
+
+
+
+
+
 
         }
 
@@ -101,27 +105,43 @@ public class Fletcher extends PollingScript<ClientContext> {
         else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 49) stage = 5;
         else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 54) stage = 6;
         else if (ctx.skills.level(Constants.SKILLS_FLETCHING) <= 64) stage = 7;
+
+        setPAUSED(false);
+    }
+    public void setPAUSED(boolean b){
+        PAUSED = b;
     }
 
 
 
     public void poll() {
         if (STOPPED == false) {
-            animCounter++;
+            if (ui.getStarted() && firstStart) {
+                System.out.println("UI started == true");
+                setStage();
+                firstStart = false;
+            } else if (!ui.getStarted() && !firstStart){
+                setPAUSED(true);
+                firstStart = true;
+                System.out.println("UI started == false, pausing");
+            }
+            if (PAUSED == false) {
+                animCounter++;
 //        System.out.println("animCounter = "+animCounter);
-            if (ctx.players.local().animation() != -1) {
-                animCounter = 0;
-            }
-            checkBanking();
-
-            if (banking) {
-                if (r.nextInt(12) > 7) { //Delay from finishing an inventory to banking
-                    Condition.sleep(4500 + r.nextInt(4500));
+                if (ctx.players.local().animation() != -1) {
+                    animCounter = 0;
                 }
-                bank(type);
+                checkBanking();
+
+                if (banking) {
+                    if (r.nextInt(12) > 7) { //Delay from finishing an inventory to banking
+                        Condition.sleep(4500 + r.nextInt(4500));
+                    }
+                    bank(type);
+                }
+                if (!banking) fletch(type);
+                if (animCounter > 500) STOPPED = true;
             }
-            if (!banking) fletch(type);
-            if (animCounter > 500) STOPPED = true;
         }
     }
 
@@ -178,40 +198,41 @@ public class Fletcher extends PollingScript<ClientContext> {
             }
 
             if (type == 1){
-
+                bankingOptions("GEMS", CHISEL, RUBY, 99, true);
+//                bankingOptions("GEMS", CHISEL, DIAMOND, 99, true);
             }
 
             if (type == 2){ //Levelling guide bank commands
                         if (stage == 0){ //Cut logs into shafts
-                            bankingOptions("LOGS", KNIFE, LOGS, 99);
+                            bankingOptions("LOGS", KNIFE, LOGS, 8, true);
                         }
                         else if (stage == 1){
-                            bankingOptions("ATTACH", ARROW_SHAFT, FEATHER, 99);
+                            bankingOptions("ATTACH", ARROW_SHAFT, FEATHER, 99, true);
                         }
                         else if (stage == 2){
-                            bankingOptions("ATTACH", HEADLESS_ARROW, IRON_ARROW_TIPS, 25);
+                            bankingOptions("ATTACH", HEADLESS_ARROW, IRON_ARROW_TIPS, 25, true);
                         }
                         else if (stage == 3){
-                            bankingOptions("LOGS", KNIFE, OAK_LOGS, 35);
+                            bankingOptions("LOGS", KNIFE, OAK_LOGS, 35, true);
                         }
                         else if (stage == 4){
-                            bankingOptions("LOGS", KNIFE, WILLOW_LOGS, 40);
+                            bankingOptions("LOGS", KNIFE, WILLOW_LOGS, 40, false);
                         }
                         else if (stage == 5){
-                            bankingOptions("LOGS", KNIFE, WILLOW_LOGS, 50);
+                            bankingOptions("LOGS", KNIFE, WILLOW_LOGS, 50, true);
                         }
                         else if (stage == 6){
-                            bankingOptions("LOGS", KNIFE, MAPLE_LOGS, 55);
+                            bankingOptions("LOGS", KNIFE, MAPLE_LOGS, 55, false);
                         }
                         else if (stage == 7){
-                            bankingOptions("LOGS", KNIFE, MAPLE_LOGS, 65);
+                            bankingOptions("LOGS", KNIFE, MAPLE_LOGS, 65, true);
                         }
             }
             if (banking == false) ctx.bank.close();
 //            banking = false;
     }
 
-    public void bankingOptions(String option, int item0, int item1, int maxLevel){
+    public void bankingOptions(String option, int item0, int item1, int maxLevel, boolean useAll){
         if (option == "LOGS") {
             Condition.wait(new Callable<Boolean>() {
                 public Boolean call() throws Exception {
@@ -284,12 +305,37 @@ public class Fletcher extends PollingScript<ClientContext> {
                 }
             }, 10, 100);
         }
+
         fletchItem0 = item0;
         fletchItem1 = item1;
-        if (ctx.players.local().ctx.inventory.select().id(item0).count() == 0 || ctx.players.local().ctx.inventory.select().id(item1).count() == 0 || ctx.skills.level(Constants.SKILLS_FLETCHING) >= maxLevel && type == 2) {
-            System.out.println("Detecting no fletching items or at max level, increasing stage");
-            stage++;
-            banking = true;
+        if (type == 2) {
+            if (useAll) {
+                if ((ctx.players.local().ctx.inventory.select().id(item0).count() == 0 || ctx.players.local().ctx.inventory.select().id(item1).count() == 0) && ctx.skills.level(Constants.SKILLS_FLETCHING) >= maxLevel) {
+                    System.out.println("Detecting no fletching items or at max level, increasing stage");
+                    stage++;
+                    banking = true;
+                    if (stage > 7) stop();
+                    if (ctx.skills.level(Constants.SKILLS_FLETCHING) >= 65) stop();
+                    return;
+                }
+            }
+            else if (!useAll) {
+                if (ctx.players.local().ctx.inventory.select().id(item0).count() == 0 || ctx.players.local().ctx.inventory.select().id(item1).count() == 0 || ctx.skills.level(Constants.SKILLS_FLETCHING) >= maxLevel) {
+                    System.out.println("Detecting no fletching items or at max level, increasing stage");
+                    stage++;
+                    banking = true;
+                    if (stage > 7) stop();
+                    if (ctx.skills.level(Constants.SKILLS_FLETCHING) >= 65) stop();
+                    return;
+                }
+            }
+            if ((ctx.players.local().ctx.inventory.select().id(item0).count() == 0 || ctx.players.local().ctx.inventory.select().id(item1).count() == 0) && ctx.skills.level(Constants.SKILLS_FLETCHING) < maxLevel){
+                stop();
+            }
+        }
+        else if (ctx.players.local().ctx.inventory.select().id(item0).count() == 0 || ctx.players.local().ctx.inventory.select().id(item1).count() == 0) {
+            System.out.println("Detecting no fletching items, stopping");
+            stop();
             return;
         }
     }
@@ -304,7 +350,11 @@ public class Fletcher extends PollingScript<ClientContext> {
                 banking = true;
             }
         }
-
+        if (type == 1){
+            if (ctx.players.local().ctx.inventory.select().id(fletchItem0).count() == 0 || ctx.players.local().ctx.inventory.select().id(fletchItem1).count() == 0) {
+                banking = true;
+            }
+        }
         if (type == 2) {
             if (ctx.players.local().ctx.inventory.select().id(fletchItem0).count() == 0 || ctx.players.local().ctx.inventory.select().id(fletchItem1).count() == 0) {
                 banking = true;
@@ -357,13 +407,9 @@ public class Fletcher extends PollingScript<ClientContext> {
                     }
                     }
                     if (type == 1 ) { //FOR BOLTS + TIPS AND ARROWS
-//                        System.out.println("Fletch type = 1");
-                        if (ctx.players.local().animation() == -1 && animCounter > 25) { //Artificial delay TODO: Should only be used for combining bolt + tips or making arrows
-                            if (r.nextInt(12) == 5) {
-                                Condition.sleep(4500 + r.nextInt(4500));
-                            }
 
-                        }
+                      fletchingOptions("GEMS", RUBY, 0);
+//                      fletchingOptions("GEMS", DIAMOND, 0);
                     }
 
                     if (type == 2) { //TRAINING GUIDE TO 65
@@ -399,7 +445,7 @@ public class Fletcher extends PollingScript<ClientContext> {
     }
 
     public void fletchingOptions(String option, int item0, int item1) { //FOR "LOGS" option, item0 = the log type and item1 = the menu option
-        if (option == "LOGS") { //to be used for gems as well
+        if (option == "LOGS") {
             if (ctx.players.local().animation() == -1 && animCounter > 25) {
                 animCounter = 0;
                 if (newStage) startNewStage();
@@ -409,6 +455,42 @@ public class Fletcher extends PollingScript<ClientContext> {
                         if (knife.valid() == false) return true;
                         System.out.println("Using knife");
                         return knife.interact("Use");
+                    }
+                }, 50, 100);
+
+                Item fletchItem = ctx.inventory.select().id(item0).poll();
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        System.out.println("Using logs");
+                        return fletchItem.interact("Use");
+                    }
+                }, 50, 100);
+
+                Component fletchingScreen = ctx.widgets.component(270, 0);
+
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return fletchingScreen.valid();
+                    }
+                }, 50, 100);
+
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return ctx.widgets.component(270, 14+item1).click();
+                    }
+                }, 50, 100);
+            }
+        }
+        if (option == "GEMS") { //to be used for gems as well
+            if (ctx.players.local().animation() == -1 && animCounter > 25) {
+                animCounter = 0;
+                if (newStage) startNewStage();
+                Item chisel = ctx.inventory.select().id(CHISEL).poll();
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        if (chisel.valid() == false) return true;
+                        System.out.println("Using knife");
+                        return chisel.interact("Use");
                     }
                 }, 50, 100);
 
@@ -471,6 +553,12 @@ public class Fletcher extends PollingScript<ClientContext> {
             }
         }
     }
+    public void resetCamera(){
+        Component lookNorth = ctx.widgets.component(161, 24);
+        lookNorth.click();
+        ctx.camera.pitch(99);
+        Condition.sleep(1000);
+    }
 
     public void startNewStage(){
 
@@ -484,43 +572,128 @@ public class Fletcher extends PollingScript<ClientContext> {
 
 }
 
-class GUI extends JFrame {
-    private JPanel panelMain = new JPanel();
-    private JComboBox comboBoxJobs = new JComboBox();
-    private JButton startButton = new JButton();
+//Imports are listed in full to show what's being used
+//could just import javax.swing.* and java.awt.* etc..
+class GuiApp1 {
+    private boolean started = false;
 
-    public GUI() {
-        startButton.addActionListener(new ActionListener() {
+
+    //Note: Typically the main method will be in a
+//separate class. As this is a simple one class
+//example it's all in the one class.
+    public static void main(String[] args) {
+        new GuiApp1();
+    }
+    public GuiApp1()
+    {
+
+        JFrame guiFrame = new JFrame();
+//make sure the program exits when the frame closes
+        guiFrame.setTitle("Fletcher");
+        guiFrame.setSize(300,250);
+//This will center the JFrame in the middle of the screen
+        guiFrame.setLocationRelativeTo(null);
+//Options for the JComboBox
+        String[] fletchingOptions = {"Gems to Bolt Tips", "Logs", "Combine Items", "Training Mode"};
+//Options for the JList
+//        String[] vegOptions = {"Asparagus", "Beans", "Broccoli", "Cabbage"
+//                , "Carrot", "Celery", "Cucumber", "Leek", "Mushroom"
+//                , "Pepper", "Radish", "Shallot", "Spinach", "Swede"
+//                , "Turnip"};
+        String[] gemSettings = {""};
+        String[] logSettings = {""};
+        String[] combineSettings = {""};
+        String[] trainingSettings = {""};
+//The first JPanel contains a JLabel and JCombobox
+        final JPanel comboPanel = new JPanel();
+        JLabel comboLbl = new JLabel("Options:");
+        JComboBox optionsCombo = new JComboBox(fletchingOptions);
+        comboPanel.add(comboLbl);
+        comboPanel.add(optionsCombo);
+//Create the second JPanel. Add a JLabel and JList
+//Create JCheckBox's for all the options
+        final JPanel listPanel = new JPanel();
+        listPanel.setVisible(true);
+        JLabel listLbl = new JLabel("Settings:");
+        JCheckBox rubyBox = new JCheckBox("Ruby");
+        JCheckBox diamondBox = new JCheckBox("Diamond");
+        JCheckBox sapphireBox = new JCheckBox("Sapphire");
+        JCheckBox emeraldBox = new JCheckBox("Emerald");
+        JCheckBox opalBox = new JCheckBox("Opal");
+        JCheckBox amethystBox = new JCheckBox("Amethyst");
+//        JList vegs = new JList(vegOptions);
+//        vegs.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+        listPanel.add(listLbl);
+        listPanel.add(rubyBox);
+        listPanel.add(diamondBox);
+        listPanel.add(sapphireBox);
+        listPanel.add(emeraldBox);
+        listPanel.add(opalBox);
+        listPanel.add(amethystBox);
+//        listPanel.add(vegs);
+        JButton startBut = new JButton( "Start");
+        JButton stopBut = new JButton( "Stop");
+//The ActionListener class is used to handle the
+//event that happens when the user clicks the button.
+//As there is not a lot that needs to happen we can
+//define an anonymous inner class to make the code simpler.
+
+
+        optionsCombo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.out.println("ComboBox = "+optionsCombo.getSelectedItem() +" "+optionsCombo.getSelectedIndex());
+                if (optionsCombo.getSelectedIndex() == 0){
 
-            }
-        });
-        comboBoxJobs.addItemListener(new ItemListener() {
-            @Override
-            public void itemStateChanged(ItemEvent event) {
-                if (event.getStateChange() == ItemEvent.SELECTED) {
-                    Object item = event.getItem();
-                    System.out.println("Triggering item = "+event.getItem());
-                    // do something with object
                 }
+
             }
         });
-        panelMain.add(startButton);
-        panelMain.add(comboBoxJobs);
-    }
 
-    public static void main(String[] args) {
 
+
+        startBut.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent event)
+            {
+                if (!started) {
+                    setStarted(true);
+                    startBut.setText("Stop");
+                } else if (started) {
+                    setStarted(false);
+                    startBut.setText("Start");
+                }
+                System.out.println("Started = "+started);
+            }
+        });
+
+        stopBut.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent event)
+            {
+//                setStarted(false);
+//                startBut.setVisible(true);
+//                stopBut.setVisible(false);
+            }
+        });
+//The JFrame uses the BorderLayout layout manager.
+//Put the two JPanels and JButton in different areas.
+        guiFrame.add(comboPanel, BorderLayout.NORTH);
+        guiFrame.add(listPanel, BorderLayout.CENTER);
+        guiFrame.add(startBut,BorderLayout.SOUTH);
+//        guiFrame.add(stopBut,BorderLayout.SOUTH);
+//make sure the JFrame is visible
+        guiFrame.setVisible(true);
     }
-    public void start(){
-        JFrame frame = new JFrame("Fletcher");
-        frame.setContentPane(new GUI().panelMain);
-//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.add(panelMain);
-        frame.pack();
-        frame.setSize(450, 450);
-        frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
+    public static void getGems(){
+        System.out.println("Getting gems");
+    }
+    public boolean getStarted(){
+        return started;
+    }
+    public void setStarted(boolean b){
+        started = b;
     }
 }

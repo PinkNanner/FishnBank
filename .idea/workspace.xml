@@ -20,6 +20,9 @@
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$20.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$24.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$5.class" afterDir="false" />
@@ -28,9 +31,11 @@
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/GUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/GUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GUI$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GUI$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/scripts/GUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/FletchGui.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/FletchGui.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/Fletcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Fletcher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -50,12 +55,13 @@
     <session id="-772143692">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.24" value="2" />
@@ -66,7 +72,7 @@
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,7 +80,7 @@
           <entry key="class" value="10" />
           <entry key="form" value="4" />
           <entry key="iml" value="1" />
-          <entry key="java" value="46" />
+          <entry key="java" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -82,21 +88,21 @@
           <entry key="CLASS" value="10" />
           <entry key="GUI_DESIGNER_FORM" value="4" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="46" />
+          <entry key="JAVA" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="47765" />
+          <entry key="java" value="49903" />
           <entry key="txt" value="99" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="47765" />
+          <entry key="JAVA" value="49903" />
           <entry key="PLAIN_TEXT" value="115" />
         </counts>
       </usages-collector>
@@ -108,35 +114,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2892">
-              <caret line="162" column="92" selection-start-line="162" selection-start-column="92" selection-end-line="162" selection-end-column="92" />
+            <state relative-caret-position="493">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2857#2858#0" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <element signature="e#24055#24056#0" expanded="true" />
+                <element signature="e#24084#24085#0" expanded="true" />
+                <element signature="e#26341#26342#0" expanded="true" />
+                <element signature="e#26377#26378#0" expanded="true" />
+                <element signature="e#26222#26223#0" expanded="true" />
+                <element signature="e#26252#26253#0" expanded="true" />
+                <element signature="e#26291#26292#0" expanded="true" />
+                <element signature="e#26318#26319#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/FletchGui.java">
+        <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+            <state relative-caret-position="265">
+              <caret line="292" column="5" lean-forward="true" selection-start-line="292" selection-start-column="5" selection-end-line="292" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/FletchGui.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/GUI.form">
-          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -175,7 +181,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
+            <state relative-caret-position="1190">
               <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -238,6 +244,7 @@
       <find>widge</find>
       <find>obj</find>
       <find>Item</find>
+      <find>resetC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -304,7 +311,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -337,25 +344,18 @@
             </path>
             <path>
               <item name="FishnBank" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FishnBank" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="FletchGui" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="FishnBank" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="363" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560131130169" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560477108426" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7078.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -430,7 +430,7 @@
     </configuration>
     <configuration name="Play (1)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7095.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -439,7 +439,7 @@
     </configuration>
     <configuration name="Play (2)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7095.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -448,43 +448,7 @@
     </configuration>
     <configuration name="Play (3)" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
-      <option name="PROGRAM_PARAMETERS" value="runescape" />
-      <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk1.8.0_171\jre" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Play (4)" type="JarApplication" factoryName="JAR Application">
-      <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
-      <option name="PROGRAM_PARAMETERS" value="runescape" />
-      <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk1.8.0_171\jre" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Play (5)" type="JarApplication" factoryName="JAR Application">
-      <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
-      <option name="PROGRAM_PARAMETERS" value="runescape" />
-      <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk1.8.0_171\jre" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Play (6)" type="JarApplication" factoryName="JAR Application">
-      <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
-      <option name="PROGRAM_PARAMETERS" value="runescape" />
-      <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="D:\Program Files\Java\jdk1.8.0_171\jre" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Play (7)" type="JarApplication" factoryName="JAR Application">
-      <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7095.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -493,7 +457,7 @@
     </configuration>
     <configuration name="Play" type="JarApplication" factoryName="JAR Application">
       <option name="JAR_PATH" value="D:/Users/Jesse/jagexcache/jagexlauncher/bin/jagexappletviewer.jar" />
-      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7093.jar" />
+      <option name="VM_PARAMETERS" value="-Djava.search.path=out -Dsun.java2d.nodraw=true -Dcom.jagex.config=http://oldschool.runescape.com/l=en/jav_config.ws -Xmx512m -Xss2m -XX:CompileThreshold=1500 -Xincgc -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -javaagent:$PROJECT_DIR$/../../Binaries/RSBot-7095.jar" />
       <option name="PROGRAM_PARAMETERS" value="runescape" />
       <option name="WORKING_DIRECTORY" value="D:\Projects\Workspace\FishnBank" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -523,10 +487,6 @@
       <item itemvalue="JAR Application.Play (1)" />
       <item itemvalue="JAR Application.Play (2)" />
       <item itemvalue="JAR Application.Play (3)" />
-      <item itemvalue="JAR Application.Play (4)" />
-      <item itemvalue="JAR Application.Play (5)" />
-      <item itemvalue="JAR Application.Play (6)" />
-      <item itemvalue="JAR Application.Play (7)" />
       <item itemvalue="Application.GUI" />
       <item itemvalue="Application.FletchGui" />
     </list>
@@ -631,7 +591,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559858189641</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Creating fletching leveling guide to 65">
+      <created>1560137254692</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560137254693</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -647,7 +614,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -765,16 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="73" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/GrandExchange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2108">
@@ -786,25 +743,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="66" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FletcherGui.java" />
     <entry file="file://$PROJECT_DIR$/src/scripts/FletcherGui.form" />
     <entry file="file://$PROJECT_DIR$/src/scripts/GUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2892">
-          <caret line="162" column="92" selection-start-line="162" selection-start-column="92" selection-end-line="162" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FletchGui.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -816,9 +760,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/FletchGui.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/GUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/TutorialIsland.java">
@@ -850,7 +791,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/Catherby.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
+        <state relative-caret-position="1190">
           <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -866,6 +807,39 @@
             <element signature="imports" expanded="true" />
             <element signature="e#8671#8672#0" expanded="true" />
             <element signature="e#8716#8717#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/GUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="292" column="5" lean-forward="true" selection-start-line="292" selection-start-column="5" selection-end-line="292" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2857#2858#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#24055#24056#0" expanded="true" />
+            <element signature="e#24084#24085#0" expanded="true" />
+            <element signature="e#26341#26342#0" expanded="true" />
+            <element signature="e#26377#26378#0" expanded="true" />
+            <element signature="e#26222#26223#0" expanded="true" />
+            <element signature="e#26252#26253#0" expanded="true" />
+            <element signature="e#26291#26292#0" expanded="true" />
+            <element signature="e#26318#26319#0" expanded="true" />
           </folding>
         </state>
       </provider>
