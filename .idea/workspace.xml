@@ -6,37 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d6329cc1-42c9-4b6c-ab21-640468e8b08a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$18.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$19.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$20.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$21.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$22.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$23.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$24.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/Fletcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/scripts/Fletcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/GUI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/GUI$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/scripts/GUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/FletchGui.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/FletchGui.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/Fletcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Fletcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/GUI.form" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,15 +66,15 @@
         <counts>
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="49903" />
-          <entry key="txt" value="99" />
+          <entry key="java" value="50973" />
+          <entry key="txt" value="133" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
-          <entry key="JAVA" value="49903" />
-          <entry key="PLAIN_TEXT" value="115" />
+          <entry key="JAVA" value="50973" />
+          <entry key="PLAIN_TEXT" value="149" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -114,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="969">
+              <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2857#2858#0" expanded="true" />
@@ -128,6 +99,8 @@
                 <element signature="e#26252#26253#0" expanded="true" />
                 <element signature="e#26291#26292#0" expanded="true" />
                 <element signature="e#26318#26319#0" expanded="true" />
+                <element signature="e#30544#30545#0" expanded="true" />
+                <element signature="e#30570#30571#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -300,10 +273,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="y" value="59" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -355,9 +328,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="363" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560477108426" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560558118094" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7078.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -598,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560137254693</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Creating GUI for fletcher.">
+      <created>1560477156151</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560477156151</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -612,9 +592,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -623,7 +602,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23185265" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23185265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.15492958" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -651,7 +630,8 @@
     <MESSAGE value="Enabled Pirates Treasure" />
     <MESSAGE value="Fixed new Bank ID's" />
     <MESSAGE value="Creating fletching leveling guide to 65" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating fletching leveling guide to 65" />
+    <MESSAGE value="Creating GUI for fletcher." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating GUI for fletcher." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/FishnBank/scripts/GoblinKiller.class" />
@@ -826,8 +806,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        <state relative-caret-position="969">
+          <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2857#2858#0" expanded="true" />
@@ -840,6 +820,8 @@
             <element signature="e#26252#26253#0" expanded="true" />
             <element signature="e#26291#26292#0" expanded="true" />
             <element signature="e#26318#26319#0" expanded="true" />
+            <element signature="e#30544#30545#0" expanded="true" />
+            <element signature="e#30570#30571#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -920,7 +902,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>RSBot-7088</last-edited>
+          <last-edited>RSBot-7078</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
