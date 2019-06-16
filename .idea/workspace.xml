@@ -65,14 +65,14 @@
           <entry key="class" value="26" />
           <entry key="dummy" value="16" />
           <entry key="java" value="51243" />
-          <entry key="txt" value="133" />
+          <entry key="txt" value="151" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="26" />
           <entry key="JAVA" value="51243" />
-          <entry key="PLAIN_TEXT" value="149" />
+          <entry key="PLAIN_TEXT" value="167" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -83,8 +83,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            <state relative-caret-position="391">
+              <caret line="224" column="16" selection-start-line="224" selection-start-column="16" selection-end-line="224" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2857#2858#0" expanded="true" />
@@ -326,7 +326,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="363" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560654986679" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560655197937" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Binaries/RSBot-7078.jar!/" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -583,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560558420892</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Does Ranarr pots">
+      <created>1560655003094</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560655003094</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -599,7 +606,7 @@
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -608,7 +615,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23185265" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23185265" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.15492958" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -637,7 +644,8 @@
     <MESSAGE value="Fixed new Bank ID's" />
     <MESSAGE value="Creating fletching leveling guide to 65" />
     <MESSAGE value="Creating GUI for fletcher." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating GUI for fletcher." />
+    <MESSAGE value="Does Ranarr pots" />
+    <option name="LAST_COMMIT_MESSAGE" value="Does Ranarr pots" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/FishnBank/scripts/GoblinKiller.class" />
@@ -812,8 +820,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/Fletcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        <state relative-caret-position="391">
+          <caret line="224" column="16" selection-start-line="224" selection-start-column="16" selection-end-line="224" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2857#2858#0" expanded="true" />
