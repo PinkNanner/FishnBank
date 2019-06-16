@@ -338,9 +338,12 @@ public class Fletcher extends PollingScript<ClientContext> {
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
                         ctx.bank.depositInventory();
-                        ctx.bank.withdraw(item0, 14);
-                        ctx.bank.withdraw(item1, 14);
-                        return ctx.players.local().ctx.inventory.isFull();
+                        return ctx.bank.withdraw(item0, 14);
+                    }
+                }, 10, 100);
+                Condition.wait(new Callable<Boolean>() {
+                    public Boolean call() throws Exception {
+                        return ctx.bank.withdraw(item1, 14);
                     }
                 }, 10, 100);
             }
