@@ -222,7 +222,7 @@ public class Fletcher extends PollingScript<ClientContext> {
             }
 
             if (type == 1){
-                if (opal) bankingOptions("STRING", VIAL_OF_WATER, RANARR_WEED, 99, true);
+                bankingOptions("STRING", VIAL_OF_WATER, RANARR_WEED, 99, true);
 //                if (opal) bankingOptions("GEMS", CHISEL, OPAL, 99, true);
 //                if (jade) bankingOptions("GEMS", CHISEL, JADE, 99, true);
 //                if (pearl) bankingOptions("GEMS", CHISEL, PEARL, 99, true);
