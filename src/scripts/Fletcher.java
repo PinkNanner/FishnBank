@@ -57,7 +57,9 @@ public class Fletcher extends PollingScript<ClientContext> {
     private final int DRAGONSTONE = 1615;
     private final int ONYX = 1615;
 
-
+//HERBS
+    private final int VIAL_OF_WATER = 227;
+    private final int RANARR_WEED = 257;
 
 
 
@@ -68,8 +70,8 @@ public class Fletcher extends PollingScript<ClientContext> {
     static ArrayList<Integer> FLETCHING_LIST = new ArrayList<>();
 
     GuiApp1 ui = new GuiApp1();
-    boolean banking = true, STOPPED = false, newStage = true, PAUSED = true, firstStart = true, hasBanked;
-    Boolean ruby, emerald, diamond, sapphire, opal, amethyst, jade, pearl, topaz, dragonstone, onyx;
+    boolean banking = true, STOPPED = false, newStage = true, PAUSED = true, firstStart = true, hasBanked, hasFletched;
+    boolean ruby, emerald, diamond = true, sapphire, opal, amethyst, jade, pearl, topaz, dragonstone, onyx;
     ArrayList<Boolean> gemArray = new ArrayList();
     int animCounter = 0, stage = 0, type = 1;
     int fletchItem0, fletchItem1;
@@ -220,16 +222,17 @@ public class Fletcher extends PollingScript<ClientContext> {
             }
 
             if (type == 1){
-                if (opal) bankingOptions("GEMS", CHISEL, OPAL, 99, true);
-                if (jade) bankingOptions("GEMS", CHISEL, JADE, 99, true);
-                if (pearl) bankingOptions("GEMS", CHISEL, PEARL, 99, true);
-                if (topaz) bankingOptions("GEMS", CHISEL, TOPAZ, 99, true);
-                if (sapphire) bankingOptions("GEMS", CHISEL, SAPPHIRE, 99, true);
-                if (emerald) bankingOptions("GEMS", CHISEL, EMERALD, 99, true);
-                if (ruby) bankingOptions("GEMS", CHISEL, RUBY, 99, true);
-                if (diamond) bankingOptions("GEMS", CHISEL, DIAMOND, 99, true);
-                if (dragonstone) bankingOptions("GEMS", CHISEL, DRAGONSTONE, 99, true);
-                if (onyx) bankingOptions("GEMS", CHISEL, ONYX, 99, true);
+                if (opal) bankingOptions("STRING", VIAL_OF_WATER, RANARR_WEED, 99, true);
+//                if (opal) bankingOptions("GEMS", CHISEL, OPAL, 99, true);
+//                if (jade) bankingOptions("GEMS", CHISEL, JADE, 99, true);
+//                if (pearl) bankingOptions("GEMS", CHISEL, PEARL, 99, true);
+//                if (topaz) bankingOptions("GEMS", CHISEL, TOPAZ, 99, true);
+//                if (sapphire) bankingOptions("GEMS", CHISEL, SAPPHIRE, 99, true);
+//                if (emerald) bankingOptions("GEMS", CHISEL, EMERALD, 99, true);
+//                if (ruby) bankingOptions("GEMS", CHISEL, RUBY, 99, true);
+//                if (diamond) bankingOptions("GEMS", CHISEL, DIAMOND, 99, true);
+//                if (dragonstone) bankingOptions("GEMS", CHISEL, DRAGONSTONE, 99, true);
+//                if (onyx) bankingOptions("GEMS", CHISEL, ONYX, 99, true);
 
 
 
@@ -262,6 +265,7 @@ public class Fletcher extends PollingScript<ClientContext> {
                         }
             }
             hasBanked = false;
+            hasFletched = false;
             if (banking == false) ctx.bank.close();
 //            banking = false;
     }
@@ -443,8 +447,9 @@ public class Fletcher extends PollingScript<ClientContext> {
                     }
                     if (type == 1 ) { //FOR BOLTS + TIPS AND ARROWS
 
+                        fletchingOptions("STRING", VIAL_OF_WATER, RANARR_WEED);
 //                      fletchingOptions("GEMS", RUBY, 0);
-                      fletchingOptions("GEMS", DIAMOND, 0);
+//                      fletchingOptions("GEMS", DIAMOND, 0);
                     }
 
                     if (type == 2) { //TRAINING GUIDE TO 65
@@ -480,95 +485,96 @@ public class Fletcher extends PollingScript<ClientContext> {
     }
 
     public void fletchingOptions(String option, int item0, int item1) { //FOR "LOGS" option, item0 = the log type and item1 = the menu option
-        if (option == "LOGS") {
+            if (option == "LOGS") {
+                if (ctx.players.local().animation() == -1 && animCounter > 25) {
+                    animCounter = 0;
+                    if (newStage) startNewStage();
+                    Item knife = ctx.inventory.select().id(KNIFE).poll();
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            if (knife.valid() == false) return true;
+                            System.out.println("Using knife");
+                            return knife.interact("Use");
+                        }
+                    }, 50, 100);
+
+                    Item fletchItem = ctx.inventory.select().id(item0).poll();
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            System.out.println("Using logs");
+                            return fletchItem.interact("Use");
+                        }
+                    }, 50, 100);
+
+                    Component fletchingScreen = ctx.widgets.component(270, 0);
+
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return fletchingScreen.valid();
+                        }
+                    }, 50, 100);
+
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return ctx.widgets.component(270, 14 + item1).click();
+                        }
+                    }, 50, 100);
+                }
+            }
+            if (option == "GEMS") { //to be used for gems as well
+                if (ctx.players.local().animation() == -1 && animCounter > 25) {
+                    animCounter = 0;
+                    if (newStage) startNewStage();
+                    Item chisel = ctx.inventory.select().id(CHISEL).poll();
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            if (chisel.valid() == false) return true;
+                            System.out.println("Using chisel");
+                            return chisel.interact("Use");
+                        }
+                    }, 50, 100);
+
+                    Item fletchItem = ctx.inventory.select().id(item0).poll();
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            System.out.println("Using gem");
+                            return fletchItem.interact("Use");
+                        }
+                    }, 50, 100);
+
+                    Component fletchingScreen = ctx.widgets.component(270, 0);
+
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return fletchingScreen.valid();
+                        }
+                    }, 50, 100);
+
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return ctx.widgets.component(270, 14 + item1).click();
+                        }
+                    }, 50, 100);
+                }
+            }
+        if (option == "STRING") {
             if (ctx.players.local().animation() == -1 && animCounter > 25) {
                 animCounter = 0;
                 if (newStage) startNewStage();
-                Item knife = ctx.inventory.select().id(KNIFE).poll();
+                Item fletchItem0 = ctx.inventory.select().id(item0).poll();
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
-                        if (knife.valid() == false) return true;
-                        System.out.println("Using knife");
-                        return knife.interact("Use");
+                        if (fletchItem0.valid() == false) return true;
+                        System.out.println("Using item 1");
+                        return fletchItem0.interact("Use");
                     }
                 }, 50, 100);
 
-                Item fletchItem = ctx.inventory.select().id(item0).poll();
+                Item fletchItem1 = ctx.inventory.select().id(item1).poll();
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
-                        System.out.println("Using logs");
-                        return fletchItem.interact("Use");
-                    }
-                }, 50, 100);
-
-                Component fletchingScreen = ctx.widgets.component(270, 0);
-
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return fletchingScreen.valid();
-                    }
-                }, 50, 100);
-
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return ctx.widgets.component(270, 14+item1).click();
-                    }
-                }, 50, 100);
-            }
-        }
-        if (option == "GEMS") { //to be used for gems as well
-            if (ctx.players.local().animation() == -1 && animCounter > 25) {
-                animCounter = 0;
-                if (newStage) startNewStage();
-                Item chisel = ctx.inventory.select().id(CHISEL).poll();
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        if (chisel.valid() == false) return true;
-                        System.out.println("Using knife");
-                        return chisel.interact("Use");
-                    }
-                }, 50, 100);
-
-                Item fletchItem = ctx.inventory.select().id(item0).poll();
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        System.out.println("Using logs");
-                        return fletchItem.interact("Use");
-                    }
-                }, 50, 100);
-
-                Component fletchingScreen = ctx.widgets.component(270, 0);
-
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return fletchingScreen.valid();
-                    }
-                }, 50, 100);
-
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return ctx.widgets.component(270, 14+item1).click();
-                    }
-                }, 50, 100);
-            }
-        }
-        if (option == "ATTACH"){
-            if (ctx.players.local().animation() == -1 && animCounter > 190) {
-                if (r.nextInt(10) >= 7){
-                    Condition.sleep(r.nextInt(4500));
-                } else Condition.sleep(r.nextInt(200));
-                animCounter = 0;
-                Item firstItem = ctx.inventory.select().id(item0).poll();
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return firstItem.interact("Use");
-                    }
-                }, 50, 100);
-
-                Item secondItem = ctx.inventory.select().id(item1).poll();
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return secondItem.interact("Use");
+                        System.out.println("Using item 2");
+                        return fletchItem1.interact("Use");
                     }
                 }, 50, 100);
 
@@ -586,6 +592,41 @@ public class Fletcher extends PollingScript<ClientContext> {
                     }
                 }, 50, 100);
             }
+        }
+            if (option == "ATTACH") {
+                if (ctx.players.local().animation() == -1 && animCounter > 190) {
+                    if (r.nextInt(10) >= 7) {
+                        Condition.sleep(r.nextInt(4500));
+                    } else Condition.sleep(r.nextInt(200));
+                    animCounter = 0;
+                    Item firstItem = ctx.inventory.select().id(item0).poll();
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return firstItem.interact("Use");
+                        }
+                    }, 50, 100);
+
+                    Item secondItem = ctx.inventory.select().id(item1).poll();
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return secondItem.interact("Use");
+                        }
+                    }, 50, 100);
+
+                    Component fletchingScreen = ctx.widgets.component(270, 0);
+
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return fletchingScreen.valid();
+                        }
+                    }, 50, 100);
+
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return ctx.widgets.component(270, 14).click();
+                        }
+                    }, 50, 100);
+                }
         }
     }
     public void resetCamera(){
