@@ -184,7 +184,7 @@ public class Fletcher extends PollingScript<ClientContext> {
         GameObject exchangeBooth = ctx.objects.select().id(EXCHANGE_BOOTH).nearest().poll();
 
 //        if (ctx.players.local().ctx.inventory.select().id(fletchType).count() == 0) {
-            if (r.nextInt(10) >= 6) {
+            if (r.nextInt(10) >= 9) {
                 System.out.println("Doing long wait");
                 Condition.sleep(4500 + r.nextInt(4500));
             } else Condition.sleep(500 + r.nextInt(500));
@@ -193,7 +193,7 @@ public class Fletcher extends PollingScript<ClientContext> {
                     bankBooth.interact("Bank");
                     return ctx.bank.open();
                 }
-            }, 50, 100);
+            }, 150, 100);
             if (type == 0) {
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
@@ -335,17 +335,27 @@ public class Fletcher extends PollingScript<ClientContext> {
                     }
                 }, 10, 100);
 
+                Condition.sleep(45);
+
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
-                        ctx.bank.depositInventory();
-                        return ctx.bank.withdraw(item0, 14);
+                        if (ctx.players.local().ctx.inventory.select().count() != 0) ctx.bank.depositInventory();
+                        if (ctx.players.local().ctx.inventory.select().id(item0).count() == 0) return ctx.bank.withdraw(item0, 14);
+                        return false;
                     }
-                }, 10, 100);
+                }, 25, 100);
+
+                Condition.sleep(45);
+
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
+                        if (ctx.players.local().ctx.inventory.select().id(item0).count() > 14){
+                            ctx.bank.deposit(item0, 14);
+                            ctx.bank.depositAllExcept(item0);
+                        }
                         return ctx.bank.withdraw(item1, 14);
                     }
-                }, 10, 100);
+                }, 25, 100);
             }
 
             fletchItem0 = item0;
@@ -573,6 +583,8 @@ public class Fletcher extends PollingScript<ClientContext> {
                     }
                 }, 50, 100);
 
+                Condition.sleep(55);
+
                 Item fletchItem1 = ctx.inventory.select().id(item1).poll();
                 Condition.wait(new Callable<Boolean>() {
                     public Boolean call() throws Exception {
@@ -587,13 +599,14 @@ public class Fletcher extends PollingScript<ClientContext> {
                     public Boolean call() throws Exception {
                         return fletchingScreen.valid();
                     }
-                }, 50, 100);
-
-                Condition.wait(new Callable<Boolean>() {
-                    public Boolean call() throws Exception {
-                        return ctx.widgets.component(270, 14).click();
-                    }
-                }, 50, 100);
+                }, 10, 100);
+                if (fletchingScreen.valid()) {
+                    Condition.wait(new Callable<Boolean>() {
+                        public Boolean call() throws Exception {
+                            return ctx.widgets.component(270, 14).click();
+                        }
+                    }, 50, 100);
+                }
             }
         }
             if (option == "ATTACH") {
